@@ -1,0 +1,28 @@
+{
+  "name": "pdf-sanitizer",
+  "version": "1.0.0",
+  "description": "一个用于处理 PDF 文件的 JavaScript 库，能够从 PDF 文件中移除敏感文本。通过绘制矩形覆盖指定位置的文本，从而确保敏感信息不会被泄露。 A JavaScript library for processing PDF files that can remove sensitive text from PDF documents. It covers specified text locations with rectangles to ensure sensitive information is not exposed.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  },
+  "keywords": [
+    "pdf",
+    "sanitizer",
+    "pdf-lib",
+    "sensitive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louyongjiu/pdf-sanitizer.git"
+  },
+  "author": "louyongjiu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/louyongjiu/pdf-sanitizer/issues"
+  },
+  "homepage": "https://github.com/louyongjiu/pdf-sanitizer#readme"
+}
