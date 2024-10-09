@@ -51,14 +51,14 @@ const sanitizePdf = require('sanitize-pdf');
 ### `sanitizePdf(inputBuffer, options)`
 
 - **参数 / Parameters**:
-- `inputBuffer`: Buffer - 输入的 PDF 文件的 Buffer。/ The input PDF file as a Buffer.
-- `options`: Array - 参数数组，每个元素是一个对象，包含以下属性：/ An array of options, each being an object with the following properties:
-  - `textX`: number - 文本的 X 坐标。/ The X coordinate of the text.
-  - `textY`: number - 文本的 Y 坐标（相对于页面的高度）。/ The Y coordinate of the text (relative to the height of the page).
-  - `textHeight`: number - 文本的高度。/ The height of the text.
-  - `textWidth`: number - 文本的宽度。/  The width of the text.
-  - `color`: Object - 绘制矩形的颜色，格式为 `{ r: number, g: number, b: number }`（默认值为白色）。/ The color of the rectangle to draw, formatted as `{ r: number, g: number, b: number }` (default is white).
-  - `pageNumbers`: Array<number> - 可选页码数组，指定要处理的页码（从 1 开始）。/ An optional array of page numbers specifying which pages to process (starting from 1).
+  - `inputBuffer`: Buffer - 输入的 PDF 文件的 Buffer。/ The input PDF file as a Buffer.
+  - `options`: Array - 参数数组，每个元素是一个对象，包含以下属性：/ An array of options, each being an object with the following properties:
+    - `textX`: number - 文本的 X 坐标。/ The X coordinate of the text.
+    - `textY`: number - 文本的 Y 坐标（相对于页面的高度）。/ The Y coordinate of the text (relative to the height of the page).
+    - `textHeight`: number - 文本的高度。/ The height of the text.
+    - `textWidth`: number - 文本的宽度。/  The width of the text.
+    - `color`: Object - 绘制矩形的颜色，格式为 `{ r: number, g: number, b: number }`（默认值为白色）。/ The color of the rectangle to draw, formatted as `{ r: number, g: number, b: number }` (default is white).
+    - `pageNumbers`: Array<number> - 可选页码数组，指定要处理的页码（从 1 开始）。/ An optional array of page numbers specifying which pages to process (starting from 1).
 
 - **返回值 / Return Value**: Uint8Array - 输出处理后的 PDF 文件的 Uint8Array。/ The output processed PDF file as a Uint8Array.
 
